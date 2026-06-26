@@ -7,9 +7,10 @@
   <meta name="description" content="Employer-facing portfolio for Joseph Hilte, Computer Science graduate and software developer." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;850;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar container">
@@ -33,7 +34,7 @@
   </header>
 
   <main id="top">
-    <section class="hero section-pad">
+    <section class="hero section-pad fade-in">
       <div class="container hero-grid horizontal-hero">
         <div class="hero-copy">
           <p class="eyebrow">Software Developer • Computer Science Graduate</p>
@@ -44,7 +45,7 @@
             and working with teams to deliver dependable software.
           </p>
 
-          <div class="pill-row" aria-label="Quick highlights">
+          <div class="pill-row">
             <span>Florida Institute of Technology</span>
             <span>Graduated May 2026</span>
             <span>U.S. Citizen</span>
@@ -63,7 +64,7 @@
       </div>
     </section>
 
-    <section class="section-pad about-section" id="about">
+    <section class="section-pad about-section fade-in" id="about">
       <div class="container about-panel">
         <div class="about-copy">
           <p class="eyebrow">About Me</p>
@@ -86,31 +87,20 @@
       </div>
 
       <div class="container stats-grid horizontal-stats">
-        <div class="stat-card">
-          <span>5+</span>
-          <p>Major projects completed</p>
-        </div>
-        <div class="stat-card">
-          <span>8</span>
-          <p>Largest number of team members coordinated</p>
-        </div>
-        <div class="stat-card">
-          <span>Top 5</span>
-          <p>Cybersecurity team competition placement</p>
-        </div>
-        <div class="stat-card">
-          <span>4+</span>
-          <p>Leadershp Roles</p>
-        </div>
+        <div class="stat-card"><span>5+</span><p>Major projects completed</p></div>
+        <div class="stat-card"><span>8</span><p>Largest team coordinated</p></div>
+        <div class="stat-card"><span>Top 5</span><p>Cybersecurity competition placement</p></div>
+        <div class="stat-card"><span>4+</span><p>Leadership roles</p></div>
       </div>
     </section>
 
-    <section class="section-pad" id="experience">
+    <section class="section-pad fade-in" id="experience">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Work History</p>
           <h2>Experience</h2>
         </div>
+
         <div class="cards three-col">
           <article class="card">
             <p class="date">Oct 2023 – May 2026</p>
@@ -118,12 +108,14 @@
             <p class="muted">FIT Esports Center</p>
             <p>Managed 60 computers using daily checklists, troubleshot hardware/software issues, and supported livestream operations.</p>
           </article>
+
           <article class="card featured-card">
             <p class="date">Aug 2022 – May 2024</p>
             <h3>Software Engineer I</h3>
             <p class="muted">Project Jumpstart</p>
             <p>Improved code quality by debugging, refactoring legacy modules, enhancing test coverage, and coordinating an 8-person team.</p>
           </article>
+
           <article class="card">
             <p class="date">Aug 2022 – Dec 2022</p>
             <h3>Cyber Team Captain</h3>
@@ -134,61 +126,60 @@
       </div>
     </section>
 
-    <section class="section-pad" id="projects">
+    <section class="section-pad fade-in" id="projects">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Selected Work</p>
           <h2>Projects</h2>
         </div>
+
         <div class="cards three-col">
           <article class="card featured-card">
             <h3>Panther Shuttle App</h3>
             <p class="muted">Kotlin · Firebase · Google Maps · GitHub · Jira</p>
             <p>Led a 4-person team in building an Android app that supports student, driver, and manager roles for campus shuttle coordination.</p>
+            <a class="project-link" href="#" target="_blank" rel="noopener">View GitHub Repo</a>
           </article>
+
           <article class="card">
             <h3>PyQt Recipe Viewer</h3>
             <p class="muted">Python · PyQt5 · JSON</p>
             <p>Built a searchable, paginated GUI recipe application with image integration, search/reset features, and detailed recipe views.</p>
+            <a class="project-link" href="#" target="_blank" rel="noopener">View GitHub Repo</a>
           </article>
+
           <article class="card">
             <h3>Othello AI Game</h3>
             <p class="muted">Python · Minimax · Alpha-Beta Pruning</p>
             <p>Developed an interactive Othello game with AI decision-making, undo, turn-skipping, scoring, and full rule enforcement.</p>
+            <a class="project-link" href="#" target="_blank" rel="noopener">View GitHub Repo</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-pad" id="leadership">
+    <section class="section-pad fade-in" id="leadership">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Leadership</p>
           <h2>Campus Involvement</h2>
         </div>
+
         <div class="timeline">
-          <div class="timeline-item">
-            <h3>Theta Xi Fraternity Gamma Beta Chapter</h3>
-            <p>Vice President · 2024 – 2025</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Florida Tech Fishing Club</h3>
-            <p>Treasurer · 2024 – 2025</p>
-          </div>
-          <div class="timeline-item">
-            <h3>FIT Cybersecurity Team</h3>
-            <p>Cyber Team Captain · 2022</p>
-          </div>
+          <div class="timeline-item"><h3>Theta Xi Fraternity Gamma Beta Chapter</h3><p>Vice President · 2024 – 2025</p></div>
+          <div class="timeline-item"><h3>Florida Tech Fishing Club</h3><p>Treasurer · 2024 – 2025</p></div>
+          <div class="timeline-item"><h3>FIT Cybersecurity Team</h3><p>Cyber Team Captain · 2022</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad" id="skills">
+    <section class="section-pad fade-in" id="skills">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Technical Toolkit</p>
           <h2>Skills</h2>
         </div>
+
         <div class="skill-grid">
           <div><h3>Languages</h3><p>Python, Java, Kotlin, C++, C, Go, Assembly</p></div>
           <div><h3>Tools</h3><p>Git, GitHub, Jira, VS Code, Android Studio</p></div>
@@ -198,11 +189,19 @@
       </div>
     </section>
 
-    <section class="section-pad contact-section" id="contact">
+    <section class="section-pad contact-section fade-in" id="contact">
       <div class="container contact-card">
-        <p class="eyebrow">Contact me</p>
-        <h2>Lets connect.</h2>
-        <p>Interested in any software development and any roles, projects, or internships you may have.</p>
+        <p class="eyebrow">Contact Me</p>
+        <h2>Let’s connect.</h2>
+        <p>Open to software development, QA, technical, and entry-level engineering opportunities.</p>
+
+        <div class="contact-links">
+          <a href="mailto:jhiltework@gmail.com">jhiltework@gmail.com</a>
+          <a href="tel:4438334160">(443) 833-4160</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
         <div class="button-row centered">
           <a class="button primary" href="mailto:jhiltework@gmail.com">Email Joseph</a>
           <a class="button" href="Joseph_Hilte_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
