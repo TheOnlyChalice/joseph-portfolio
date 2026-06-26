@@ -3,133 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joseph Hilte | Software Developer Portfolio</title>
-  <meta name="description" content="Portfolio website for Joseph Hilte, Computer Science graduate and software developer." />
+  <title>Joseph Hilte | Software Developer</title>
+  <meta name="description" content="Employer-facing portfolio for Joseph Hilte, Computer Science graduate and software developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#leadership">Leadership</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar container">
+      <a class="brand" href="#top">
+        <span class="brand-name">Joseph Hilte</span>
+        <span class="brand-role">Software Developer</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="resume-link" href="Joseph_Hilte_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero" id="about">
-      <div class="hero-content">
-        <p class="eyebrow">Computer Science Graduate · U.S. Citizen</p>
-        <h1>Joseph Hilte</h1>
-        <h2>Software Developer focused on clean code, testing, and practical applications.</h2>
-        <p>
-          I am a Computer Science graduate from Florida Institute of Technology with experience in
-          software engineering, Android development, debugging, software testing, cybersecurity leadership,
-          and team-based technical projects.
-        </p>
-        <div class="button-row">
-          <a class="button primary" href="Joseph_Hilte_Resume.pdf" target="_blank">View Resume</a>
-          <a class="button" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-          <a class="button" href="https://github.com/" target="_blank">GitHub</a>
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Graduate · Software Developer · U.S. Citizen</p>
+          <h1>Building reliable software through clean code, testing, and teamwork.</h1>
+          <p class="hero-summary">
+            I’m Joseph Hilte, a Computer Science graduate from Florida Institute of Technology with hands-on experience in
+            software engineering, Android development, debugging, software testing, cybersecurity leadership, and team-based
+            technical projects. I enjoy solving practical problems, improving system quality, and building applications that are
+            reliable, maintainable, and useful for real users.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="Joseph_Hilte_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+            <a class="button" href="#projects">View Projects</a>
+            <a class="button ghost" href="mailto:jhiltework@gmail.com">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Candidate highlights">
+          <div class="hero-card-row">
+            <span class="icon">🎓</span>
+            <div>
+              <h3>B.S. Computer Science</h3>
+              <p>Florida Institute of Technology</p>
+              <p>Dean’s List: 2024 – 2026</p>
+            </div>
+          </div>
+          <div class="hero-card-row">
+            <span class="icon">📍</span>
+            <div>
+              <h3>Columbia, Maryland</h3>
+              <p>Open to software development, QA, and technical roles</p>
+            </div>
+          </div>
+          <div class="hero-card-row">
+            <span class="icon">🛠️</span>
+            <div>
+              <h3>Core Strengths</h3>
+              <p>Python · Java · Kotlin · C++ · SQL · Firebase · Git · Jira</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-pad about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">About Me</p>
+          <h2>Driven by curiosity. Built on teamwork.</h2>
+          <p>
+            My background combines software development, testing, and leadership. Through academic projects and professional
+            experience, I have developed the ability to learn quickly, communicate clearly, and deliver results as part of a team.
+          </p>
+          <p>
+            At Project Jumpstart, I improved long-term code maintainability through systematic debugging, refactoring, and enhanced
+            test coverage. I also helped coordinate an 8-person team so project milestones were completed on schedule.
+          </p>
+          <p>
+            I’m excited to contribute to a forward-thinking team where I can continue growing as a developer while building reliable,
+            user-focused software.
+          </p>
+        </div>
+
+        <figure class="about-photo-card">
+          <img src="joseph-photo.jpg" alt="Joseph Hilte at graduation" />
+          <figcaption>Florida Institute of Technology graduate with software, testing, and leadership experience.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span>3+</span>
+          <p>Major projects completed</p>
+        </div>
+        <div class="stat-card">
+          <span>8</span>
+          <p>Team members coordinated at Project Jumpstart</p>
+        </div>
+        <div class="stat-card">
+          <span>Top 5</span>
+          <p>Cybersecurity team competition placement</p>
+        </div>
+        <div class="stat-card">
+          <span>30%</span>
+          <p>Reduction in codebase bugs</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <p class="eyebrow">Work History</p>
-        <h2>Experience</h2>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <h3>Esports Technician</h3>
-          <p class="muted">FIT Esports Center · Oct 2023 – May 2026</p>
-          <p>Managed 60 computers, troubleshot hardware and software issues, and supported livestream operations with reliable on-time segment starts.</p>
-        </article>
-        <article class="card">
-          <h3>Software Engineer I</h3>
-          <p class="muted">Project Jumpstart · Aug 2022 – May 2024</p>
-          <p>Improved code quality through debugging, refactoring, and test coverage while helping coordinate an 8-person team to meet project milestones.</p>
-        </article>
-        <article class="card">
-          <h3>Cyber Team Captain</h3>
-          <p class="muted">FIT Cybersecurity Team · Aug 2022 – Dec 2022</p>
-          <p>Directed weekly meetings, assigned tasks, and led structured preparation that helped the team earn a top 5 placement in club competition.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Projects</h2>
-      </div>
-      <div class="cards">
-        <article class="card featured-card">
-          <h3>Panther Shuttle App</h3>
-          <p class="muted">Kotlin · Firebase · Google Maps · GitHub · Jira</p>
-          <p>Led a 4-person team in developing an Android app supporting student, driver, and manager roles for campus shuttle coordination.</p>
-        </article>
-        <article class="card">
-          <h3>PyQt Recipe Viewer</h3>
-          <p class="muted">Python · PyQt5 · JSON</p>
-          <p>Built a searchable, paginated GUI recipe application with image integration, detailed views, and faster recipe navigation.</p>
-        </article>
-        <article class="card">
-          <h3>Othello AI Game</h3>
-          <p class="muted">Python · Minimax · Alpha-Beta Pruning</p>
-          <p>Developed an interactive Othello game with AI decision-making, undo, turn-skipping, scoring, and full rule enforcement.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="leadership">
-      <div class="section-heading">
-        <p class="eyebrow">Leadership</p>
-        <h2>Campus Involvement</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Theta Xi Fraternity Gamma Beta Chapter</h3>
-          <p class="muted">Vice President · 2024 – 2025</p>
+    <section class="section-pad" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Work History</p>
+          <h2>Experience</h2>
         </div>
-        <div class="timeline-item">
-          <h3>Florida Tech Fishing Club</h3>
-          <p class="muted">Treasurer · 2024 – 2025</p>
-        </div>
-        <div class="timeline-item">
-          <h3>FIT Cybersecurity Team</h3>
-          <p class="muted">Cyber Team Captain · 2022</p>
+        <div class="cards three-col">
+          <article class="card">
+            <p class="date">Oct 2023 – May 2026</p>
+            <h3>Esports Technician</h3>
+            <p class="muted">FIT Esports Center</p>
+            <p>Managed 60 computers using daily checklists, troubleshot hardware/software issues, and supported livestream operations.</p>
+          </article>
+          <article class="card featured-card">
+            <p class="date">Aug 2022 – May 2024</p>
+            <h3>Software Engineer I</h3>
+            <p class="muted">Project Jumpstart</p>
+            <p>Improved code quality by debugging, refactoring legacy modules, enhancing test coverage, and coordinating an 8-person team.</p>
+          </article>
+          <article class="card">
+            <p class="date">Aug 2022 – Dec 2022</p>
+            <h3>Cyber Team Captain</h3>
+            <p class="muted">FIT Cybersecurity Team</p>
+            <p>Led weekly meetings, assigned tasks, and helped guide the team to a top 5 placement in a club competition.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="section-heading">
-        <p class="eyebrow">Technical Toolkit</p>
-        <h2>Skills</h2>
-      </div>
-      <div class="skill-grid">
-        <div><h3>Languages</h3><p>Python, Java, Kotlin, C++, C, Go, Assembly</p></div>
-        <div><h3>Tools</h3><p>Git, GitHub, Jira, VS Code, Android Studio</p></div>
-        <div><h3>Databases & APIs</h3><p>SQL, REST APIs, Firebase</p></div>
-        <div><h3>Concepts</h3><p>Data Structures, Algorithms, OOP, Debugging, Software Testing</p></div>
+    <section class="section-pad" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="cards three-col">
+          <article class="card featured-card">
+            <h3>Panther Shuttle App</h3>
+            <p class="muted">Kotlin · Firebase · Google Maps · GitHub · Jira</p>
+            <p>Led a 4-person team in building an Android app that supports student, driver, and manager roles for campus shuttle coordination.</p>
+          </article>
+          <article class="card">
+            <h3>PyQt Recipe Viewer</h3>
+            <p class="muted">Python · PyQt5 · JSON</p>
+            <p>Built a searchable, paginated GUI recipe application with image integration, search/reset features, and detailed recipe views.</p>
+          </article>
+          <article class="card">
+            <h3>Othello AI Game</h3>
+            <p class="muted">Python · Minimax · Alpha-Beta Pruning</p>
+            <p>Developed an interactive Othello game with AI decision-making, undo, turn-skipping, scoring, and full rule enforcement.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="section-heading">
+    <section class="section-pad" id="leadership">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Leadership</p>
+          <h2>Campus Involvement</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Theta Xi Fraternity Gamma Beta Chapter</h3>
+            <p>Vice President · 2024 – 2025</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Florida Tech Fishing Club</h3>
+            <p>Treasurer · 2024 – 2025</p>
+          </div>
+          <div class="timeline-item">
+            <h3>FIT Cybersecurity Team</h3>
+            <p>Cyber Team Captain · 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Toolkit</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-grid">
+          <div><h3>Languages</h3><p>Python, Java, Kotlin, C++, C, Go, Assembly</p></div>
+          <div><h3>Tools</h3><p>Git, GitHub, Jira, VS Code, Android Studio</p></div>
+          <div><h3>Databases & APIs</h3><p>SQL, REST APIs, Firebase</p></div>
+          <div><h3>Concepts</h3><p>Data Structures, Algorithms, OOP, Debugging, Software Testing</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad contact-section" id="contact">
+      <div class="container contact-card">
         <p class="eyebrow">Get in Touch</p>
-        <h2>Contact</h2>
-      </div>
-      <p>Email: <a href="mailto:jhiltework@gmail.com">jhiltework@gmail.com</a></p>
-      <p>Location: Columbia, Maryland</p>
-      <div class="button-row centered">
-        <a class="button primary" href="mailto:jhiltework@gmail.com">Email Joseph</a>
-        <a class="button" href="Joseph_Hilte_Resume.pdf" target="_blank">Download Resume</a>
+        <h2>Contact Joseph</h2>
+        <p>Interested in software development, software testing, Android development, and technical team roles.</p>
+        <div class="button-row centered">
+          <a class="button primary" href="mailto:jhiltework@gmail.com">Email Joseph</a>
+          <a class="button" href="Joseph_Hilte_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
       </div>
     </section>
   </main>
